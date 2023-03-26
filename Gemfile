@@ -19,6 +19,15 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+#make error better locaking 
+gem 'better_errors', '~> 2.4'
+#Bulma CSS 
+gem 'bulma-rails', '~> 0.6.1'
+
+#simple form
+gem 'simple_form', '~> 3.5'
+
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -39,6 +48,12 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
+
+  gem 'guard', '~> 2.14', '~> 2.14.1'
+
+
+# Guard::LiveReload automatically reloads your browser when 'view' files are modified.
+gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
 
 group :development do
